@@ -1,0 +1,257 @@
+
+  /*add font Helvetica Neue*/
+
+  @font-face {
+      font-family: 'Helvetica Neue Regular';
+      src: url(../fonts/helveticaneue-black-webfont.eot);
+      src: url(../fonts/helveticaneue-black-webfont.eot?#iefix) format('embedded-opentype'),
+           url(../fonts/helveticaneue-black-webfont.woff2) format('woff2'),
+           url(..fonts/helveticaneue-black-webfont.woff) format('woff'),
+           url(../fonts/helveticaneue-black-webfont.ttf) format('truetype');
+           font-weight: bold;
+           font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'Helvetica Neue Regular';
+      src: url(../fonts/helveticaneue-boldcond-webfont.eot);
+      src: url(../fonts/helveticaneue-boldcond-webfont.eot?#iefix) format('embedded-opentype'),
+           url(../fonts/helveticaneue-boldcond-webfont.woff2) format('woff2'),
+           url(../fonts/helveticaneue-boldcond-webfont.woff) format('woff'),
+           url(../fonts/helveticaneue-boldcond-webfont.ttf) format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+
+  /*style for background*/
+
+  body {
+    font-family: "Helvetica Neue Regular", Tahoma, sans-serif;
+    background: url(../img/main-poto.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  /*style for header*/
+
+  header {
+    width: 100%;
+    height: 36px;
+    background-image: url(../img/header.png);
+    background-repeat: repeat-x;
+    /*нихрена не получается и никто не знает как его делать*/
+    /*background: url(../img/patter-for-header.png) url(../img/noise-for-header.png) repeat-y;
+    background-color: #065090;*/
+    /*background: linear-gradient(#11cde1,#fff), linear-gradient(#07bdd0,#0c739f);
+background-size: 100% 146px, 100%;
+background-repeat: no-repeat,repeat;
+background-position: 0px 38px;*/
+    text-align: right;
+    font-size: 0;
+  }
+
+  .menu,
+  .menu-item,
+  .page-link {
+    display: inline-block;
+    box-sizing: border-box;
+  }
+
+  .menu-link,
+  .page-link {
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .menu-link {
+    color: #60b5ed;
+  }
+
+  .menu-link:last-child {
+    padding-right: 20px;
+  }
+
+  .menu-link:hover {
+    background: #4eabda;
+    color: #ffffff;
+  }
+
+  .menu:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    display: inline-block;
+    height: 31px;
+    width: 1px;
+    background-color: #56a2dc;
+  }
+
+  .page-link {
+    color: #fefefe;
+  }
+
+  /*style for icon of flag*/
+
+  .image {
+    background: url(../img/flag.png) left 20px center no-repeat;
+    padding-left: 55px;
+  }
+
+  .page-link:last-child {
+    margin-right: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgb(42, 123, 197), rgb(80, 178, 221));
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgb(64, 154, 211), rgb(41, 123, 182)) 1 100%;
+    border-top: 0;
+  }
+
+  /*underline some worlds*/
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  /*style for container of registration form*/
+
+  .registration-form {
+    position: absolute;
+    width: 560px;
+    height: 613px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    background: rgba(0, 0, 0, 0.63);
+    text-align: center;
+  }
+
+  .caption {
+    height: 65px;
+    color: #ffffff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 65px;
+    border-bottom: 2px solid rgb(192, 203, 187);
+  }
+
+  .facebook-registration-link {
+    display: inline-block;
+    width: 276px;
+    height: 35px;
+    margin: 36px 0 0 0;
+    color: #ffffff;
+    font-size: 0;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 35px;
+    background: linear-gradient(to top, rgb(46, 63, 117), rgb(58, 85, 153));
+    border-radius: 5px;
+  }
+
+  .facebook-registration-sign {
+    display: inline-block;
+    width: 38px;
+    font-size: 22px;
+    text-align: left;
+    border-right: 1px solid rgb(25, 59, 114);
+  }
+
+  .facebook-registration-text {
+    display: inline-block;
+    height: 100%;
+    border-left: 1px solid rgb(76, 104, 172);
+    vertical-align: top;
+    font-size: 12px;
+    padding-left: 30px;
+  }
+
+  /*make word "with" normal, not bold*/
+
+  .normal-weight {
+    font-weight: 400;
+  }
+
+
+
+  .another-choise {
+    height: 21px;
+    margin: 25px 0;
+  }
+
+  .another-choise-item {
+    width: 31px;
+    height: 12px;
+    display: inline-block;
+    color: #999999;
+    font-size: 14px;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+
+  .left-line,
+  .right-line {
+    display: inline-block;
+    width: 123px;
+    vertical-align: middle;
+    border-top: 1px solid rgb(102, 102, 102);
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+
+  .input-field {
+    width: 276px;
+    height: 35px;
+    margin-bottom: 12px;
+    border: none;
+    padding-left: 18px;
+    color: #cccccc;
+    font-family: "Helvetica Neue Regular", Tahoma;
+    font-size: 14px;
+    box-shadow: 0 1px 0 #4b4b4b,  inset 0 2px 5px rgba(29, 26, 22, 0.2), inset 0 0 2px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to top, #111111 0%, #0e0d0d 100%);
+  }
+
+  .input-field:focus {
+    color: #fffbfb;
+    border-bottom: 1px solid rgb(102, 153, 203);
+    box-shadow: 0 1px 0 #4b4b4b, inset 0 2px 5px rgba(29, 26, 22, 0.2), 0 0 9px rgba(47, 123, 197, 0.77), inset 0 0 2px rgba(0, 0, 0, 0.1);
+    background-color: #1b5288;
+    background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
+  }
+
+  .checkox-accepting {
+    margin-bottom: 20px;
+    color: #cccccc;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .checkox-accepting input {
+    margin-top: 8px;
+  }
+
+  .submit {
+    width: 151px;
+    height: 37px;
+    color: #ffffff;
+    font-family: "Helvetica Neue Regular", Tahoma;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: 1px solid #e68e16;
+    border-radius: 2px;
+    background: linear-gradient(to top, rgb(51, 135, 203), rgb(79, 175, 220));
+  }
+
+  .agree-with-terms {
+    margin: 0 auto;
+    width: 309px;
+    color: #cccccc;
+    font-size: 11px;
+    line-height: 16px;
+  }
